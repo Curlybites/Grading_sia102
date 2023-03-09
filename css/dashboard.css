@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root{
+    --color1:#14213D;
+    --color2:#FCA311;
+    --color3:#E5E5E5;
+    --color4:#FFD4CE;
+    --color5:#0394f5;
+    --color6:#e7dfdd9a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    height: 100vh;
+    width: 100%;
+}
+
+.sidebar{
+    background: var(--color3);
+    display: grid; 
+    grid-template-rows: 1fr 6fr;
+}
+
+.mainbar{
+   background: var(--color3);
+}
+.logo a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  margin-top: 2rem;
+  color: var(--color1);
+  
+}
+
+.logo a span{
+    font-size: 2.3rem;
+    margin-right: 3px;
+   
+}
+
+ul{
+    list-style-type: none;
+    padding-left:0px;
+}
+
+
+.sidebar .list ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* color: var(--color1); */
+    font-size: 13px;
+    transition: 300ms ease-out;
+}
+
+.sidebar .list ul li a span{
+  
+    margin-right: 12px;
+    margin-left: 2rem;
+}
+
+.a:hover{
+    
+        /* background: var(--color6); */
+        color: var(--color1);
+        padding-left: 15px;
+        border-radius: 0 2rem 2rem 0;
+
+}
+
+.active{
+    background: var(--color1);
+    color: var(--color2);
+    padding-left: 15px;
+    border-radius: 0 2rem 2rem 0;
+    /* transition: 200ms ; */
+}
+.active:hover{
+    background: #383977;
+    color: var(--color2);
+    padding-left: 15px;
+    border-radius: 0 2rem 2rem 0;
+}
+
+
+main .numbers{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.numbers .cards{
+   margin: 20px;
+   padding: 5rem;
+   border-radius: 20px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   position: relative;
+}
+
+.numbers .cards .top-cards{
+    display: flex;
+    align-items: center;
+    
+}
+
+.numbers .cards .top-cards span{
+    font-size: 3rem;
+    margin-right: 20px;
+}
+
+.numbers .cards .top-cards{
+    position: absolute;
+    top: 2rem;
+    font-size: 20px;
+    
+}
+
+.numbers .cards h5{
+    position: absolute;
+    top: 5.6rem;
+    right: 5rem;
+    font-size: 1rem;
+}
+
+.main-content .table-main{
+    margin: 3rem;
+}
+
+.main-content .table-main table{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+
